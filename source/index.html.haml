@@ -60,7 +60,7 @@
             Renegades from the worlds of product development, web design, branding, staffing and beyond bring an original perspective to Ignite and the problems we face.
           %p
             %span.white Days worked by location
-            = image_tag "http://placehold.it/793x84"
+            = image_tag "images/office-breakdown.svg", class: "img-padding"
             * For nearly two months, we were officeless, waiting out our space renovation. Lucky for us, we had CoWork Jax, feeding us caffeine and connecting us with some of the city’s best.
   -# Office
   %section.section.office
@@ -68,17 +68,35 @@
       %aside{style: "padding-top: 10%"}
         %h2 Office
         %p We don’t believe in set structures or fixed departments per se, not because  we don’t respect the “rules” of traditional business. We just have a different way of thinking, working and behaving.
-        =image_tag "images/build.png"
-        %h5 3,533 SQ. FT.
-        Added to the Office in 2014
+        %ul
+          %li
+            =image_tag "images/build.png"
+          %li
+            %span 3,533 SQ. FT.
+          %li
+            Added to the Office in 2014
+        %p
+          =image_tag "images/local-header.svg"
+          =image_tag "images/local-eats.svg"
       %article
         .content
           %header.header-title{style: "padding-top: 10%"}
             Growth By Year
             %span{style: "width: 100%"}
           %p
-
-
+            = image_tag "http://placehold.it/793x156"
+            %span.white A typical day at the office
+            = image_tag "images/typical-day.svg", class: "img-padding"
+            = image_tag "images/shake-it-off.svg"
+          %dl.count
+            %dt 01
+            %dd Number of Sonos speakers in the office
+          %dl.count
+            %dt 31
+            %dd Times we danced to“Shake it Off” by Taylor Swift
+          %dl.count
+            %dt 50
+            %dd Number of days that song was available on Spotify
 
 :javascript
   $(document).ready(function() {
