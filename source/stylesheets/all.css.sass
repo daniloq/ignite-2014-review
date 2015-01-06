@@ -10,11 +10,17 @@
   font-weight: normal
   font-style: normal
 
+@font-face
+  font-family: 'interb'
+  src: url('/fonts/interborough-webfont.eot')
+  src: url('/fonts/interborough-webfont.eot?#iefix') format("embedded-opentype"), url('/fonts/interborough-webfont.woff2') format("woff2"), url('/fonts/interborough-webfont.woff') format("woff"), url('/fonts/interborough-webfont.ttf') format("truetype"), url('/fonts/interborough-webfont.svg#interboroughregular') format("svg")
+  font-weight: normal
+  font-style: normal
+
 // Colors
 $yellow: #FFD100
 $green: #00AF85
 $blue: #445DD8
-$dark-blue: #2D46A0
 $light-gray: #D1D1D1
 $gray: #BCBCBC
 $dark-gray: #AAABAC
@@ -34,8 +40,20 @@ body
     size: 18px
     family: 'bentonsans-c', sans-serif
 
+h2
+  color: white
+  font:
+    size: 100px
+    family: 'interb', sans-serif
+    weight: normal
+  text-transform: uppercase
+  margin: 0 0 50px 0
+
 p
   line-height: 30px
+  span
+    &.white
+      color: white
 
   // Layout
 .container
@@ -45,13 +63,48 @@ p
 aside
   width: 372px
   float: left
-  // padding: 30px
-  // box-sizing: border-box
+  p
+    color: white
+    padding-right: 60px
+    box-sizing: border-box
+  dl
+    margin: 0
+    padding: 160px 60px 0 0
+    dt, dd
+      margin: 0
+      padding: 0
+      display: inline-block
+      vertical-align: top
+    dt
+      width: 60%
+      padding-right: 20px
+      box-sizing: border-box
+      line-height: 24px
+      font:
+        size: 15px
+        weight: normal
+    dd
+      width: 38%
+  a
+    color: rgba(255,255,255,0.8)
+    text-decoration: underline
+    font-size: 16px
+    &:hover
+      color: white
+  h6
+    font:
+      size: 15px
+      weight: normal
+    line-height: 24px
+    margin: 0
+    padding: 0
 
 article
   width: 851px
   float: left
   .content
+    height: 100%
+    min-height: 100vh
     border-left: 2px dotted $slate
     p
       padding: 60px
@@ -106,3 +159,32 @@ article
   z-index: 1
   margin-right: 30px
   box-sizing: border-box
+
+.team
+  background: $green
+  dl > dt, h6
+    color: #00E8A6
+  h6
+    padding-right: 60px
+    box-sizing: border-box
+    text-align: center
+
+.commute
+  margin-right: 60px
+
+.humans
+  position: absolute
+  z-index: 1
+  height: 560px
+
+.newbies
+  position: relative
+  height: 560px
+
+.horizontal-divider
+  border-top: 2px dotted $slate
+  display: block
+  margin-bottom: 20px
+
+.office
+  background: $blue

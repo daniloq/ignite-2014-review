@@ -1,4 +1,5 @@
 #fullpage
+  -# Opening Hero
   %section.section.hero
     %header
       = image_tag "images/rewind.svg"
@@ -6,7 +7,8 @@
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
       =image_tag "images/down-arrow.png"
-  %section.section.hero
+  -# Opening Hero
+  %section.section.hero{style: "padding-top: 10%"}
     .container
       =image_tag "images/lets-work.svg", class: "lets-work"
       %aside
@@ -17,6 +19,64 @@
           %span{style: "width: 342px"}
         .content
           %p 2014 has been a good year. We pushed a lot of code, did some ugly dancing, cemented our process and teamed up with amazing folks both here at home and abroad. With a team of 23 strong, we’re making good on our promise to change the way people work. As we look forward to 2015, the future has never seemed brighter. Big ups to everyone who’s helped us along the way. So let’s raise a glass, rewind and celebrate a year well done. Together, we are Ignite.
+  -# Team
+  %section.section.team
+    .container
+      %aside{style: "padding-top: 10%"}
+        %h2 Team
+        %p Big on personality, smart and incredibly good-looking, our team is a mixed bag of creative geniuses, space cowboys, skinny jeans and special dietary menus. Somehow we shake out to a functional team.
+        %dl
+          %dt
+            Amy’s pet pig, Piggy Smalls aka Pignite, is arguably our most popular office pet with over 300+ likes on
+            = link_to "Instagram", "http://instagram.com/ignitewithus", target: "_blank"
+            &
+            = link_to "Facebook.", "https://www.facebook.com/IgnitebyAdecco", target: "_blank"
+          %dd
+            =image_tag "images/instagram-heart.png"
+            =image_tag "images/instagram-heart-2.png"
+      %article
+        .content
+          %header.header-title{style: "padding-top: 10%"}
+            Our Team
+            %span{style: "width: 100%"}
+          %p
+            =image_tag "images/humans.svg", class: "humans"
+            =image_tag "images/newbies.svg", class: "newbies"
+  %section.section.team
+    .container
+      %aside{style: "padding-top: 10%"}
+        =image_tag "images/commute.svg", class: "commute"
+        %h6 The fastest commute to the office is by foot, at 3 mins by internet tubes, 30 ms.
+        %p
+          =image_tag "images/commute-by.svg"
+      %article
+        .content
+          %header.header-title{style: "padding-top: 10%"}
+            Disciplines
+            %span{style: "width: 100%"}
+          %p
+            = image_tag "http://placehold.it/793x156"
+            %span.horizontal-divider
+            Renegades from the worlds of product development, web design, branding, staffing and beyond bring an original perspective to Ignite and the problems we face.
+          %p
+            %span.white Days worked by location
+            = image_tag "http://placehold.it/793x84"
+            * For nearly two months, we were officeless, waiting out our space renovation. Lucky for us, we had CoWork Jax, feeding us caffeine and connecting us with some of the city’s best.
+  -# Office
+  %section.section.office
+    .container
+      %aside{style: "padding-top: 10%"}
+        %h2 Office
+        %p We don’t believe in set structures or fixed departments per se, not because  we don’t respect the “rules” of traditional business. We just have a different way of thinking, working and behaving.
+        =image_tag "images/build.png"
+        %h5 3,533 SQ. FT.
+        Added to the Office in 2014
+      %article
+        .content
+          %header.header-title{style: "padding-top: 10%"}
+            Growth By Year
+            %span{style: "width: 100%"}
+          %p
 
 
 
