@@ -1,23 +1,23 @@
 #fullpage
-  .section.yellow-bg
+  %section.section.hero
     %header
       = image_tag "images/rewind.svg"
       = image_tag "images/rewind-arrow.svg"
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
       =image_tag "images/down-arrow.png"
-  .section.green-bg
-    Some section
-  .section.blue-bg
-    Some section
-  .section.dark-blue-bg
-    Some section
-  .section.light-gray-bg
-    Some section
-  .section.gray-bg
-    Some section
-  .section.dark-gray-bg
-    Some section
+  %section.section.hero
+    .container
+      =image_tag "images/lets-work.svg", class: "lets-work"
+      %aside
+        =image_tag "images/ignite-logo.svg", class: "ignite-logo"
+      %article
+        %header.header-title
+          Ignite
+          %span{style: "width: 342px"}
+        .content
+          %p 2014 has been a good year. We pushed a lot of code, did some ugly dancing, cemented our process and teamed up with amazing folks both here at home and abroad. With a team of 23 strong, we’re making good on our promise to change the way people work. As we look forward to 2015, the future has never seemed brighter. Big ups to everyone who’s helped us along the way. So let’s raise a glass, rewind and celebrate a year well done. Together, we are Ignite.
+
 
 
 :javascript
