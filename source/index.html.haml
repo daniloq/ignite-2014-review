@@ -91,7 +91,7 @@
     .container
       %aside{style: "padding-top: 10%"}
         %p
-          =image_tag "images/local-header.svg"
+          =image_tag "images/local-header.svg", class: "heading"
           =image_tag "images/local-eats.svg"
       %article
         .content
@@ -117,7 +117,7 @@
     .container
       %aside{style: "padding-top: 10%"}
         %p
-          =image_tag "images/conferences-header.svg"
+          =image_tag "images/conferences-header.svg", class: "heading"
           =image_tag "images/conferences-stats.svg"
       %article
         .content
@@ -164,11 +164,11 @@
     .container
       %aside{style: "padding-top: 10%"}
         %p
-          =image_tag "how-we-work-header.svg"
+          =image_tag "how-we-work-header.svg", class: "heading"
           =image_tag "how-we-work-stats.svg"
       %article
-        .content
-          %p
+        .content{style: "padding-top: 10%"}
+          %figure
             =image_tag "products-1.svg"
             =image_tag "products-2.svg"
             =image_tag "products-3.svg"
@@ -180,9 +180,19 @@
         %aside{style: "padding-top: 10%"}
           %h2 Products
           %p We are what we create.
+          %h5 Crowd Favorites
+          %ul.slide-menu
+            %li
+              = link_to "Catalyst", "#", class: "active"
+            %li
+              = link_to "Fetch"
+            %li
+              = link_to "Matchstiq"
+            %li
+              = link_to "WickedSmart"
         %article
           .content
-            %h2 Catalyst
+            %h2{style: "padding-top: 10%"} Catalyst
             %p
               Catalyst acts as host to all of Ignite’s workshops. Started in 2012, we’ve had the honor of working with a ton of great buisnesses to...
             %header.header-title{style: "padding-top: 10%"}
@@ -196,6 +206,16 @@
         %aside{style: "padding-top: 10%"}
           %h2 Products
           %p We are what we create.
+          %h5 Crowd Favorites
+          %ul.slide-menu
+            %li
+              = link_to "Catalyst"
+            %li
+              = link_to "Fetch", "#", class: "active"
+            %li
+              = link_to "Matchstiq"
+            %li
+              = link_to "WickedSmart"
         %article
           .content
             %h2 Fetch
@@ -208,6 +228,16 @@
         %aside{style: "padding-top: 10%"}
           %h2 Products
           %p We are what we create.
+          %h5 Crowd Favorites
+          %ul.slide-menu
+            %li
+              = link_to "Catalyst"
+            %li
+              = link_to "Fetch"
+            %li
+              = link_to "Matchstiq", "#", class: "active"
+            %li
+              = link_to "WickedSmart"
         %article
           .content
             %h2 Matchstiq
@@ -220,6 +250,16 @@
         %aside{style: "padding-top: 10%"}
           %h2 Products
           %p We are what we create.
+          %h5 Crowd Favorites
+          %ul.slide-menu
+            %li
+              = link_to "Catalyst"
+            %li
+              = link_to "Fetch"
+            %li
+              = link_to "Matchstiq"
+            %li
+              = link_to "WickedSmart", "#", class: "active"
         %article
           .content
             %h2 WickedSmart
@@ -227,6 +267,19 @@
             %header.header-title{style: "padding-top: 10%"}
               Signups: Students &amp; Alumns Signups:
               %span{style: "width: 488px"}
+
+  %section.section.love
+    .container
+      %aside{style: "padding-top: 10%"}
+        %h2 Jax Love
+        %p We helped make these things happen, and we believe in the people behind them.
+      %article
+        .content
+          %h2 Dev + Des
+          %h2 AIGA
+          %h2 Meros Academy
+          %h2 One Spark Innovation
+          =image_tag "images/heart.svg"
 
 :javascript
   $(document).ready(function() {

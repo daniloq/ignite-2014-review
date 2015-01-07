@@ -27,6 +27,7 @@ $dark-gray: #AAABAC
 $darker-gray: #939393
 $nude: #DCB38C
 $slate: #353535
+$pink: #E82E60
 
 // Typography
 *
@@ -169,6 +170,9 @@ article
     box-sizing: border-box
     text-align: center
 
+.heading
+  margin-bottom: 25px
+
 .commute
   margin-right: 60px
 
@@ -241,9 +245,9 @@ dl.count
 
 .miles-stats
   margin: 0 auto
-  padding: 0
+  padding: 0 0 0 15px
   position: absolute
-  bottom: 120px
+  top: 570px
   list-style: none
   li
     display: inline-block
@@ -259,7 +263,7 @@ dl.count
   font:
     size: 36px
     family: 'interb', sans-serif
-    color: white
+  color: white
   border: 2px solid #3DAFFC
   height: 97px
   width: 97px
@@ -270,26 +274,84 @@ dl.count
 
 .big-text
   font:
-    size: 180px
+    size: 160px
     family: 'interb', sans-serif
-  margin: 0 0 -75px 60px
+  margin: 10px 0 -60px 60px
 
 .process
   background: $nude
+  figure
+    padding: 60px
+    margin: 0
+    box-sizing: border-box
+    img
+      margin-bottom: 80px
 
 .elements
   position: absolute
   width: 809px
   top: 30px
 
+.slide-menu
+  margin: 0
+  padding: 0
+  list-style: none
+  li
+    margin: 0
+    padding: 0
+    a
+      width: 100%
+      display: block
+      margin-bottom: 20px
+      border-radius: 3px
+      padding: 10px
+      border: 2px solid white
+      background: transparent
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      width: 281px
+      box-sizing: border-box
+      font:
+        family: 'Montserrat', sans-serif
+        weight: 700
+        size: 16px
+      &:hover, &:active, &.active
+        background: white
+
 .catalyst
   background: $light-gray
+  .slide-menu
+    li
+      a
+        &:active, &.active, &:hover
+          color: $light-gray
 
 .fetch
   background: $gray
+  .slide-menu
+    li
+      a
+        &:active, &.active, &:hover
+          color: $gray
 
 .matchstiq
   background: $dark-gray
+  .slide-menu
+    li
+      a
+        &:active, &.active, &:hover
+          color: $dark-gray
 
 .wickedsmart
   background: $darker-gray
+  .slide-menu
+    li
+      a
+        &:active, &.active, &:hover
+          color: $darker-gray
+.love
+  background: $pink
+  .content
+    h2
+      color: $slate
