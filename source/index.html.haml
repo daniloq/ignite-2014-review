@@ -7,6 +7,7 @@
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
       =image_tag "images/down-arrow.png"
+
   -# Opening Hero
   %section.section.hero{style: "padding-top: 10%"}
     .container
@@ -42,6 +43,7 @@
           %p
             =image_tag "images/humans.svg", class: "humans"
             =image_tag "images/newbies.svg", class: "newbies"
+
   %section.section.team
     .container
       %aside{style: "padding-top: 10%"}
@@ -75,9 +77,6 @@
             %span 3,533 SQ. FT.
           %li
             Added to the Office in 2014
-        %p
-          =image_tag "images/local-header.svg"
-          =image_tag "images/local-eats.svg"
       %article
         .content
           %header.header-title{style: "padding-top: 10%"}
@@ -87,16 +86,147 @@
             = image_tag "http://placehold.it/793x156"
             %span.white A typical day at the office
             = image_tag "images/typical-day.svg", class: "img-padding"
+
+  %section.section.office
+    .container
+      %aside{style: "padding-top: 10%"}
+        %p
+          =image_tag "images/local-header.svg"
+          =image_tag "images/local-eats.svg"
+      %article
+        .content
+          %p
             = image_tag "images/shake-it-off.svg"
           %dl.count
-            %dt 01
-            %dd Number of Sonos speakers in the office
-          %dl.count
-            %dt 31
-            %dd Times we danced to“Shake it Off” by Taylor Swift
-          %dl.count
-            %dt 50
-            %dd Number of days that song was available on Spotify
+            %dd
+              %span 01
+              Number of Sonos speakers in the office
+            %dd
+              %span 31
+              Times we danced to“Shake it Off” by Taylor Swift
+            %dd
+              %span 50
+              Number of days that song was available on Spotify
+          %header.header-title
+            Consumed Daily
+            %span{style: "width: 330px"}
+          =image_tag "images/consumed-daily.svg", class: "consumed-daily"
+          =image_tag "images/consumed-dail-bars.svg", class: "consumed-daily"
+
+  %section.section.office
+    .container
+      %aside{style: "padding-top: 10%"}
+        %p
+          =image_tag "images/conferences-header.svg"
+          =image_tag "images/conferences-stats.svg"
+      %article
+        .content
+          %header.header-title{style: "padding-top: 10%"}
+            Travel
+            %span{style: "width: 100%"}
+          %h2.big-text 132,800 MILES
+          =image_tag "map.svg", class: "map"
+          =image_tag "map-dots.svg", class: "map"
+          %ul.miles-stats
+            %li
+              .circle
+                20
+              Airport Visits
+            %li
+              .circle
+                13
+              International Visitor
+            %li
+              .circle
+                04
+              Countries Visited
+            %li
+              .circle
+                26
+              Days Spend Abroad
+
+  -# Process
+  %section.section.process
+    .container
+      %aside{style: "padding-top: 10%"}
+        %h2 Process
+        %p Sure, we’re laissez-faire. But we perform best when we have a plan. Our process keeps us in line and on track.
+      %article
+        .content
+          %header.header-title{style: "padding-top: 10%"}
+            Elements
+            %span{style: "width: 488px"}
+          %p
+            =image_tag "gettin-down.svg", class: "elements"
+            =image_tag "hudileda.svg", class: "elements"
+
+  %section.section.process
+    .container
+      %aside{style: "padding-top: 10%"}
+        %p
+          =image_tag "how-we-work-header.svg"
+          =image_tag "how-we-work-stats.svg"
+      %article
+        .content
+          %p
+            =image_tag "products-1.svg"
+            =image_tag "products-2.svg"
+            =image_tag "products-3.svg"
+
+  -# Products
+  %section.section
+    .slide.catalyst
+      .container
+        %aside{style: "padding-top: 10%"}
+          %h2 Products
+          %p We are what we create.
+        %article
+          .content
+            %h2 Catalyst
+            %p
+              Catalyst acts as host to all of Ignite’s workshops. Started in 2012, we’ve had the honor of working with a ton of great buisnesses to...
+            %header.header-title{style: "padding-top: 10%"}
+              Workshops
+              %span{style: "width: 488px"}
+            %p
+              =image_tag "images/catalyst.svg"
+
+    .slide.fetch
+      .container
+        %aside{style: "padding-top: 10%"}
+          %h2 Products
+          %p We are what we create.
+        %article
+          .content
+            %h2 Fetch
+            %p Need to fill jobs fast? Fetch uses SMS technology to reach job-seekers on the go. Set up a campaign online and out go the details with prompts to respond. People can reply that they’re interested, opt out or, if you work at Ignite, try to break the app or heckle the Fetch dev team.
+            %header.header-title{style: "padding-top: 10%"}
+              National Rollout
+              %span{style: "width: 488px"}
+    .slide.matchstiq
+      .container
+        %aside{style: "padding-top: 10%"}
+          %h2 Products
+          %p We are what we create.
+        %article
+          .content
+            %h2 Matchstiq
+            %p Matchstiq makes hiring a whole lot easier. With job orders, conversations and reports all in one place, hiring managers and recruiters always know where things stand. Tasks like résumé formatting and data crunching are automated, drawing the shortest line possible from “Hey, I need a person” to “You’re hired” and beyond.
+            %header.header-title{style: "padding-top: 10%"}
+              Team
+              %span{style: "width: 488px"}
+    .slide.wickedsmart
+      .container
+        %aside{style: "padding-top: 10%"}
+          %h2 Products
+          %p We are what we create.
+        %article
+          .content
+            %h2 WickedSmart
+            %p WickedSmart matches students and recent grads to paid internships and entry-level opportunities that build careers, not just résumés.
+            %header.header-title{style: "padding-top: 10%"}
+              Signups: Students &amp; Alumns Signups:
+              %span{style: "width: 488px"}
 
 :javascript
   $(document).ready(function() {

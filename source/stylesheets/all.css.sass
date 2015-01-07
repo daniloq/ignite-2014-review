@@ -208,16 +208,9 @@ article
 dl.count
   margin: 0
   padding: 0
-  display: inline-block
-  width: 177px
-  vertical-align: top
-  dt
-    margin: 0
-    padding: 0
-    font:
-      family: 'interb', sans-serif
-      size: 180px
-    color: white
+  text-align: center
+  position: relative
+  top: -170px
   dd
     margin: 0
     padding: 0
@@ -225,3 +218,78 @@ dl.count
       size: 18px
       family: 'bentonsans-c', sans-serif
     color: $slate
+    width: 177px
+    display: inline-block
+    vertical-align: top
+    span
+      margin: 0
+      padding: 0
+      display: block
+      font:
+        family: 'interb', sans-serif
+        size: 180px
+      color: white
+
+.consumed-daily
+  position: absolute
+  height: 403px
+  bottom: 0
+
+.map
+  position: absolute
+  height: 302px
+
+.miles-stats
+  margin: 0 auto
+  padding: 0
+  position: absolute
+  bottom: 120px
+  list-style: none
+  li
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    border-right: 2px dotted $slate
+    padding: 0 30px
+    box-sizing: border-box
+    &:nth-of-type(4)
+      border-right: none
+
+.circle
+  font:
+    size: 36px
+    family: 'interb', sans-serif
+    color: white
+  border: 2px solid #3DAFFC
+  height: 97px
+  width: 97px
+  line-height: 97px
+  text-align: center
+  border-radius: 50%
+  margin: 0 auto 20px auto
+
+.big-text
+  font:
+    size: 180px
+    family: 'interb', sans-serif
+  margin: 0 0 -75px 60px
+
+.process
+  background: $nude
+
+.elements
+  position: absolute
+  width: 809px
+  top: 30px
+
+.catalyst
+  background: $light-gray
+
+.fetch
+  background: $gray
+
+.matchstiq
+  background: $dark-gray
+
+.wickedsmart
+  background: $darker-gray
