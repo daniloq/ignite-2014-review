@@ -3,7 +3,7 @@
   %section.section.hero
     %header
       = image_tag "images/rewind.svg"
-      = image_tag "images/rewind-arrow.svg"
+      = image_tag "images/rewind-arrow2.svg", class: "wow fadeInRightBig"
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
       =image_tag "images/arrows.png"
@@ -30,7 +30,7 @@
           %dt
             Piggy Smalls a.k.a. Pignite is arguably our most popular office pet with over 300 likes on Instagram and Facebook.
           %dd
-            =image_tag "images/instagram-heart.png"
+            =image_tag "images/instagram-heart.png", class: "insta"
             =image_tag "images/instagram-heart-2.png"
       %article
         .content
@@ -326,6 +326,11 @@
           =image_tag "images/heart.svg", class: "heart"
 
 :javascript
+  new WOW().init();
   $(document).ready(function() {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+      afterLoad: function(anchorLink, index){
+        $('.ignite-logo').addClass('animated rotateIn');
+        },
+    });
   });
