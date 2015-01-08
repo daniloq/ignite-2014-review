@@ -4,9 +4,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 796.7 561.6" enable-background="new 0 0 796.7 561.6" xml:space="preserve">
 <rect x="0" y="29.2" fill="none" width="769.4" height="131.5"/>
-<text transform="matrix(1 0 0 1 1.220703e-04 148.3185)" fill="#353535" font-family="'Interborough'" font-size="180">23 HUMANS</text>
+<text transform="matrix(1 0 0 1 0 148.3183)" fill="#353535" font-family="'Interborough'" font-size="180">23 HUMANS</text>
 <rect x="4.5" y="228.1" fill="none" width="146.1" height="26.8"/>
-<text transform="matrix(1 0 0 1 43.9019 247.9292)" fill="#353535" font-family="'Interborough'" font-size="30">13 BOYS</text>
+<text transform="matrix(1 0 0 1 43.9017 247.929)" fill="#353535" font-family="'Interborough'" font-size="30">13 BOYS</text>
+<rect x="148.5" y="261.7" fill="none" width="142.3" height="26.8"/>
+<text transform="matrix(1 0 0 1 184.4069 281.5535)" fill="#353535" font-family="'Interborough'" font-size="30">11 GIRLS</text>
 <g>
 	
 		<circle fill="none" stroke="#353535" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="146.3" cy="275" r="140.3"/>
@@ -17,10 +19,12 @@
 		62.6,387.1 145.5,275 188.1,140.4 	"/>
 </g>
 <rect x="74.2" y="349.9" fill="none" width="146.1" height="26.8"/>
-<text transform="matrix(1 0 0 1 117.9877 369.7397)" fill="#353535" font-family="'Interborough'" font-size="30">6 Pets</text>
+<text transform="matrix(1 0 0 1 117.9875 369.7396)" fill="#353535" font-family="'Interborough'" font-size="30">6 Pets</text>
 <g>
 	<rect x="3.1" y="470.1" fill="none" width="283" height="35"/>
-	<text transform="matrix(1 0 0 1 74.4756 483.3839)" fill="#353535" font-family="'BentonSans-CondensedRegular'" font-size="18">3 Fish, 2 Dogs, 1 Pig</text>
+	<text transform="matrix(1 0 0 1 74.4755 483.3837)" fill="#353535" font-family="'BentonSans-CondensedRegular'" font-size="18">3 Fish, 2 Dogs, 1 Pig</text>
 </g>
 <line fill="none" stroke="#353535" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="146.6" y1="403.4" x2="146.6" y2="444.4"/>
+<circle fill="#353535" cx="146.6" cy="403.1" r="4.1"/>
+<line fill="none" stroke="#353535" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="139.9" y1="444.9" x2="153.2" y2="444.9"/>
 </svg>

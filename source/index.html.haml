@@ -6,7 +6,7 @@
       = image_tag "images/rewind-arrow.svg"
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
-      =image_tag "images/down-arrow.png"
+      =image_tag "images/arrows.png"
 
   -# Opening Hero
   %section.section.hero{style: "padding-top: 10%"}
@@ -28,10 +28,7 @@
         %p Big on personality, smart and incredibly good-looking, our team is a mixed bag of creative geniuses, space cowboys, skinny jeans and special dietary menus. Somehow we shake out to a functional team.
         %dl
           %dt
-            Amy’s pet pig, Piggy Smalls aka Pignite, is arguably our most popular office pet with over 300+ likes on
-            = link_to "Instagram", "http://instagram.com/ignitewithus", target: "_blank"
-            &
-            = link_to "Facebook.", "https://www.facebook.com/IgnitebyAdecco", target: "_blank"
+            Piggy Smalls a.k.a. Pignite is arguably our most popular office pet with over 300 likes on Instagram and Facebook.
           %dd
             =image_tag "images/instagram-heart.png"
             =image_tag "images/instagram-heart-2.png"
@@ -48,16 +45,19 @@
     .container
       %aside{style: "padding-top: 10%"}
         =image_tag "images/commute.svg", class: "commute"
-        %h6 The fastest commute to the office is by foot, at 3 mins by internet tubes, 30 ms.
+        %h6 The fastest commutes to the office are 3 minutes by foot and 30 milliseconds by Internet tubes.
         %p
           =image_tag "images/commute-by.svg"
       %article
         .content
           %header.header-title{style: "padding-top: 10%"}
             Disciplines
-            %span{style: "width: 100%"}
+            %span{style: "width: 272px"}
+          %ul.discipline
+            %li
+              = image_tag "images/disciplines-bars.svg"
+              = image_tag "images/disciplines-numbers.svg"
           %p
-            = image_tag "http://placehold.it/793x156"
             %span.horizontal-divider
             Renegades from the worlds of product development, web design, branding, staffing and beyond bring an original perspective to Ignite and the problems we face.
           %p
@@ -76,14 +76,17 @@
           %li
             %span 3,533 SQ. FT.
           %li
-            Added to the Office in 2014
+            Added to the office in 2014
       %article
         .content
-          %header.header-title{style: "padding-top: 10%"}
+          %header.header-title{style: "padding-top: 20%"}
             Growth By Year
             %span{style: "width: 100%"}
+          %ul.growth
+            %li
+            = image_tag "growth.svg"
+            = image_tag "growth-dots.svg"
           %p
-            = image_tag "http://placehold.it/793x156"
             %span.white A typical day at the office
             = image_tag "images/typical-day.svg", class: "img-padding"
 
@@ -92,7 +95,38 @@
       %aside{style: "padding-top: 10%"}
         %p
           =image_tag "images/local-header.svg", class: "heading"
-          =image_tag "images/local-eats.svg"
+        %dl.eats
+          %dt
+            = link_to "Vagabond", "http://vagabondcoffee.com/", target: "_blank"
+            = link_to "Chamblin’s", "https://www.facebook.com/chamblinsuptown", target: "_blank"
+            = link_to "BREW", "http://brewfivepoints.com/", target: "_blank"
+          %dd
+            = image_tag "images/coffee.svg"
+        = image_tag "images/eats-divider.svg", class: "food-divider"
+        %dl.eats
+          %dt
+            = link_to "Café Nola", "http://www.mocajacksonville.org/cafe/", target: "_blank"
+            = link_to "Burrito Gallery", "http://www.burritogallery.com/", target: "_blank"
+            = link_to "Chomp Chomp", "https://twitter.com/chompchompjax", target: "_blank"
+          %dd
+            = image_tag "images/lunch.svg"
+        = image_tag "images/eats-divider.svg", class: "food-divider"
+        %dl.eats
+          %dt
+            = link_to "Black Sheep", "http://blacksheep5points.com/", target: "_blank"
+            = link_to "Dos Gatos", "http://www.dosgatosjax.com/", target: "_blank"
+            = link_to "Volstead", "https://plus.google.com/108552992381379570856/about?gl=us&hl=en", target: "_blank"
+          %dd
+            = image_tag "images/cocktails.svg"
+        = image_tag "images/eats-divider.svg", class: "food-divider"
+        %dl.eats
+          %dt
+            = link_to "Native Sun", "http://nativesunjax.com/", target: "_blank"
+            = link_to "Zoës Kitchen", "http://zoeskitchen.com/", target: "_blank"
+            = link_to "Indochine", "http://indochinejax.com/downtown.html", target: "_blank"
+          %dd
+            = image_tag "images/catering.svg"
+
       %article
         .content
           %p
@@ -192,12 +226,12 @@
               = link_to "WickedSmart"
         %article
           .content
-            %h2{style: "padding-top: 10%"} Catalyst
-            %p
-              Catalyst acts as host to all of Ignite’s workshops. Started in 2012, we’ve had the honor of working with a ton of great buisnesses to...
+            %h4 Catalyst
+            %p{style: "width: 560px"}
+              Catalyst has grown to inspire intrapreneurs and organizations worldwide. Applying HuDiLeDa to business challenges within a workshop setting, Catalyst facilitates fresh thinking and sustainable innovation.
             %header.header-title{style: "padding-top: 10%"}
-              Workshops
-              %span{style: "width: 488px"}
+              2014 Workshops
+              %span{style: "width: 528px"}
             %p
               =image_tag "images/catalyst.svg"
 
@@ -218,11 +252,13 @@
               = link_to "WickedSmart"
         %article
           .content
-            %h2 Fetch
-            %p Need to fill jobs fast? Fetch uses SMS technology to reach job-seekers on the go. Set up a campaign online and out go the details with prompts to respond. People can reply that they’re interested, opt out or, if you work at Ignite, try to break the app or heckle the Fetch dev team.
+            %h4 Fetch
+            %p{style: "width: 560px"} Need to fill jobs fast? Fetch uses SMS technology to reach job-seekers on the go. Set up a campaign online and out go the details with prompts to respond. People can reply that they’re interested, opt out or, if you work at Ignite, try to break the app or mean tweet the Fetch dev team.
             %header.header-title{style: "padding-top: 10%"}
               National Rollout
-              %span{style: "width: 488px"}
+              %span{style: "width: 558px"}
+            %p
+              =image_tag "images/fetch.svg"
     .slide.matchstiq
       .container
         %aside{style: "padding-top: 10%"}
@@ -240,11 +276,13 @@
               = link_to "WickedSmart"
         %article
           .content
-            %h2 Matchstiq
-            %p Matchstiq makes hiring a whole lot easier. With job orders, conversations and reports all in one place, hiring managers and recruiters always know where things stand. Tasks like résumé formatting and data crunching are automated, drawing the shortest line possible from “Hey, I need a person” to “You’re hired” and beyond.
+            %h4 Matchstiq
+            %p{style: "width: 560px"} Matchstiq makes hiring a whole lot easier. With job orders, conversations and reports all in one place, hiring managers and recruiters always know where things stand. Tasks like résumé formatting and data crunching are automated, drawing the shortest line possible from “Hey, I need a person” to “You’re hired” and beyond.
             %header.header-title{style: "padding-top: 10%"}
               Team
               %span{style: "width: 488px"}
+            %p
+              =image_tag "images/matchstiq.svg"
     .slide.wickedsmart
       .container
         %aside{style: "padding-top: 10%"}
@@ -262,11 +300,13 @@
               = link_to "WickedSmart", "#", class: "active"
         %article
           .content
-            %h2 WickedSmart
-            %p WickedSmart matches students and recent grads to paid internships and entry-level opportunities that build careers, not just résumés.
+            %h4 WickedSmart
+            %p{style: "width: 560px"} WickedSmart matches students and recent grads to opportunities that build careers, not just résumés.
             %header.header-title{style: "padding-top: 10%"}
               Signups: Students &amp; Alumns Signups:
-              %span{style: "width: 488px"}
+              %span{style: "width: 738px"}
+            %p
+              =image_tag "images/wickedsmart.svg"
 
   %section.section.love
     .container
