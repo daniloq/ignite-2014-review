@@ -11,9 +11,9 @@
   -# Opening Hero
   %section.section.hero{style: "padding-top: 10%"}
     .container
-      =image_tag "images/lets-work.svg", class: "lets-work"
+      =image_tag "images/lets-work.svg", class: "animated lets-work"
       %aside
-        =image_tag "images/ignite-logo.svg", class: "ignite-logo"
+        =image_tag "images/ignite-logo.svg", class: "animated ignite-logo"
       %article
         %header.header-title
           Ignite
@@ -30,16 +30,16 @@
           %dt
             Piggy Smalls a.k.a. Pignite is arguably our most popular office pet with over 300 likes on Instagram and Facebook.
           %dd
+            =image_tag "images/instagram-heart-2.png", class: "animated insta2"
             =image_tag "images/instagram-heart.png", class: "insta"
-            =image_tag "images/instagram-heart-2.png"
       %article
         .content
           %header.header-title{style: "padding-top: 10%"}
             Our Team
             %span{style: "width: 100%"}
           %p
-            =image_tag "images/humans.svg", class: "humans"
-            =image_tag "images/newbies.svg", class: "newbies"
+            =image_tag "images/humans.svg", class: "animated humans"
+            =image_tag "images/newbies.svg", class: "animated newbies"
 
   %section.section.team
     .container
@@ -55,8 +55,8 @@
             %span{style: "width: 272px"}
           %ul.discipline
             %li
-              = image_tag "images/disciplines-bars.svg"
-              = image_tag "images/disciplines-numbers.svg"
+              = image_tag "images/disciplines-bars.svg", class: "animated disciplines"
+              = image_tag "images/disciplines-numbers.svg", class: "animated discipline-numbers"
           %p
             %span.horizontal-divider
             Renegades from the worlds of product development, web design, branding, staffing and beyond bring an original perspective to Ignite and the problems we face.
@@ -85,7 +85,7 @@
           %ul.growth
             %li
             = image_tag "growth.svg"
-            = image_tag "growth-dots.svg"
+            = image_tag "growth-dots.svg", class: "animated growth-dots"
           %p
             %span.white A typical day at the office
             = image_tag "images/typical-day.svg", class: "img-padding"
@@ -213,8 +213,7 @@
       .container
         %aside{style: "padding-top: 10%"}
           %h2 Products
-          %p We are what we create.
-          %h5 Crowd Favorites
+          %h5 Navigate Products
           %ul.slide-menu
             %li
               = link_to "Catalyst", "#", class: "active"
@@ -224,6 +223,8 @@
               = link_to "Matchstiq"
             %li
               = link_to "WickedSmart"
+          %p
+            We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
           .content
             %h4 Catalyst
@@ -231,7 +232,7 @@
               Catalyst has grown to inspire intrapreneurs and organizations worldwide. Applying HuDiLeDa to business challenges within a workshop setting, Catalyst facilitates fresh thinking and sustainable innovation.
             %header.header-title{style: "padding-top: 10%"}
               2014 Workshops
-              %span{style: "width: 528px"}
+              %span{style: "width: 555px"}
             %p
               =image_tag "images/catalyst.svg"
 
@@ -239,8 +240,7 @@
       .container
         %aside{style: "padding-top: 10%"}
           %h2 Products
-          %p We are what we create.
-          %h5 Crowd Favorites
+          %h5 Navigate Products
           %ul.slide-menu
             %li
               = link_to "Catalyst"
@@ -250,6 +250,8 @@
               = link_to "Matchstiq"
             %li
               = link_to "WickedSmart"
+          %p
+            We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
           .content
             %h4 Fetch
@@ -263,8 +265,7 @@
       .container
         %aside{style: "padding-top: 10%"}
           %h2 Products
-          %p We are what we create.
-          %h5 Crowd Favorites
+          %h5 Navigate Products
           %ul.slide-menu
             %li
               = link_to "Catalyst"
@@ -274,6 +275,8 @@
               = link_to "Matchstiq", "#", class: "active"
             %li
               = link_to "WickedSmart"
+          %p
+            We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
           .content
             %h4 Matchstiq
@@ -287,8 +290,7 @@
       .container
         %aside{style: "padding-top: 10%"}
           %h2 Products
-          %p We are what we create.
-          %h5 Crowd Favorites
+          %h5 Navigate Products
           %ul.slide-menu
             %li
               = link_to "Catalyst"
@@ -298,6 +300,8 @@
               = link_to "Matchstiq"
             %li
               = link_to "WickedSmart", "#", class: "active"
+          %p
+            We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
           .content
             %h4 WickedSmart
@@ -308,29 +312,33 @@
             %p
               =image_tag "images/wickedsmart.svg"
 
+  -# We Heart
   %section.section.love
     .container
       %aside{style: "padding-top: 10%"}
-        %h2 Jax Love
-        %p Orgs we hearted in 2014
+        %h2 Orgs We Hearted
+        %p
+          We each have causes we care about. Everything from human rights to social entrepreneurship, urban renewal to animal rescue – you name it, someone here is probably working on it. As a team, our passions and work align best around community, design/dev and innovation.
+        =image_tag "images/heart.png"
       %article
-        .content
+        .content{style: "padding-top: 12%"}
           %p
-            Dev + Des
-            %br
-            AIGA
-            %br
-            Meros Academy
-            %br
-            One Spark Innovation
-          =image_tag "images/heart.svg", class: "heart"
+            =image_tag "images/giving-back.svg", class: "giving-back"
+            =image_tag "images/we-heart.svg", class: "we-heart"
 
-:javascript
-  new WOW().init();
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      afterLoad: function(anchorLink, index){
-        $('.ignite-logo').addClass('animated rotateIn');
-        },
-    });
-  });
+  -# Thank You
+  %section.section.thanks
+    .container
+      %article
+        .content{style: "padding-top: 12%"}
+        .end-point
+        =image_tag "images/thank-you.svg", class: "thank-you"
+        %p
+          We would like to thank our investors, clients, friends, family and team for
+          %br
+          their support in 2013. We’re looking forward to a blockbuster 2014.
+
+.wanker{"data-wanker" => "", style: "display: none"}
+  .wanker-content
+    %h1 The web was meant to be read, not squished.
+    %p Prevent excessive browser resizing and get people back to reading.

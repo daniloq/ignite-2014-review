@@ -1,6 +1,7 @@
 // Imports
 @import "jquery.fullPage"
 @import "animate"
+@import "wanker"
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
 
 // Fonts
@@ -28,7 +29,8 @@ $dark-gray: #AAABAC
 $darker-gray: #939393
 $nude: #DCB38C
 $slate: #353535
-$pink: #E82E60
+$ruby: #E82E60
+$pink: #FF5097
 
 // Typography
 *
@@ -50,6 +52,7 @@ h2
     weight: normal
   text-transform: uppercase
   margin: 0 0 50px 0
+  line-height: 90px
 
 p
   line-height: 30px
@@ -206,6 +209,9 @@ article
   display: block
   margin-bottom: 20px
 
+.insta, .insta2
+  position: absolute
+
 .office
   background: $blue
   aside
@@ -293,6 +299,7 @@ dl.count
     size: 160px
     family: 'interb', sans-serif
   margin: 10px 0 -60px 60px
+  line-height: normal
 
 .process
   background: $nude
@@ -316,6 +323,7 @@ dl.count
       position: relative
       height: 186px
 
+
 .growth
   margin: -102px 0 30px 0
   list-style: none
@@ -334,6 +342,21 @@ dl.count
   position: absolute
   width: 809px
   top: 30px
+
+.slide
+  h5
+    font:
+      size: 16px
+      family: 'Montserrat', sans-serif
+      weight: 700
+    text-transform: uppercase
+    color: white
+  aside > p
+    font:
+      size: 15px
+      family: 'bentonsans-c', sans-serif
+    line-height: 21px
+    padding-right: 80px
 
 .slide-menu
   margin: 0
@@ -415,7 +438,13 @@ dl.count
       margin-top: -321px
 
 .love
-  background: $pink
+  background: $ruby
+  aside
+    text-align: center
+    p, h2
+      text-align: left
+    img
+      margin: 40px 80px 0 0
   .content
     h2
       color: $slate
@@ -432,12 +461,31 @@ dl.count
       position: relative
       z-index: 1
 
-.heart
+.thanks
+  background: $pink
+  text-align: center
+  article
+    width: 100%
+    float: none
+    height: 100%
+    min-height: 100vh
+    .content
+      padding-top: 0
+      height: auto
+      min-height: 80px
+      margin-left: 372px
+
+.end-point
+  height: 3px
+  border-radius: 1000px
+  background: $slate
+  width: 14px
+  margin: 0 366px
+
+.we-heart, .giving-back
   position: absolute
-  top: 206px
-  width: 600px
-  right: 389px
-  z-index: 0
+  height: 467px
+  top: 30px
 
 dl.eats
   margin: 8px 0 0 0
@@ -477,10 +525,16 @@ dl.eats
     background: url('/images/prev2.svg') no-repeat
 
 .fp-controlArrow.fp-next
-  width: 48px
-  height: 48px
+  width: 58px
+  height: 58px
   border-width: 0
   border-color: transparent
   background: url('/images/next1.svg') no-repeat
   &:hover
     background: url('/images/next2.svg') no-repeat
+
+// Animation Delays
+.insta2, .disciplines, .discipline-numbers, .growth-dots
+  animation-duration: 1s
+  -webkit-animation-delay: 1s
+  -moz-animation-iteration-count: infinite
