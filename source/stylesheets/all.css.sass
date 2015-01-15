@@ -2,6 +2,7 @@
 @import "jquery.fullPage"
 @import "animate"
 @import "wanker"
+@import "odometer-theme-default"
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
 
 // Fonts
@@ -227,6 +228,18 @@ article
         font-size: 18px
         span
           font-size: 36px
+  article
+    span
+      &.big-text
+        font:
+          size: 160px
+          family: "interb", sans-serif
+          line-height: normal
+        vertical-align: middle
+        display: inline-block !important
+        margin: 10px 0 -72px 60px
+      &.big-text:nth-of-type(2)
+        margin: 10px 0 -72px 10px
 
 .img-padding
   margin: 20px 0
@@ -514,6 +527,13 @@ dl.eats
 .food-divider
   margin-right: 60px
 
+.bar
+  height: 6.6px
+  position: absolute
+  right: 389px
+  top: 424px
+  z-index: 99999
+
 // Arrows
 .fp-controlArrow.fp-prev
   width: 58px
@@ -533,8 +553,21 @@ dl.eats
   &:hover
     background: url('/images/next2.svg') no-repeat
 
+.odometer
+  display: block !important
+
 // Animation Delays
-.insta2, .disciplines, .discipline-numbers, .growth-dots
+.disciplines, .discipline-numbers, .growth-dots, .this, .dots, .we-heart
   animation-duration: 1s
   -webkit-animation-delay: 1s
-  -moz-animation-iteration-count: infinite
+  -moz-animation-iteration-count: 1
+
+.insta, .next, .bar
+  animation-duration: 1s
+  -webkit-animation-delay: 2s
+  -moz-animation-iteration-count: 1
+
+.three
+  animation-duration: 1s
+  -webkit-animation-delay: 3s
+  -moz-animation-iteration-count: 1

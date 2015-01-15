@@ -7,9 +7,10 @@
     =image_tag "images/title-text.svg", class: "title-text"
     .down-arrow
       =image_tag "images/arrows.png"
+      -# =image_tag "images/arrows-hover.png", class: "wow flash", "data-wow-delay" => "2s"
 
   -# Opening Hero
-  %section.section.hero{style: "padding-top: 10%"}
+  %section.section.hero{style: "padding-top: 5%"}
     .container
       =image_tag "images/lets-work.svg", class: "animated lets-work"
       %aside
@@ -30,8 +31,8 @@
           %dt
             Piggy Smalls a.k.a. Pignite is arguably our most popular office pet with over 300 likes on Instagram and Facebook.
           %dd
-            =image_tag "images/instagram-heart-2.png", class: "animated insta2"
-            =image_tag "images/instagram-heart.png", class: "insta"
+            =image_tag "images/instagram-heart-2.png", class: "insta2"
+            =image_tag "images/instagram-heart.png", class: "animated insta"
       %article
         .content
           %header.header-title{style: "padding-top: 10%"}
@@ -45,8 +46,8 @@
     .container
       %aside{style: "padding-top: 10%"}
         =image_tag "images/commute.svg", class: "commute"
-        %h6 The fastest commutes to the office are 3 minutes by foot and 30 milliseconds by Internet tubes.
-        %p
+        %h6.animated.this The fastest commutes to the office are 3 minutes by foot and 30 milliseconds by Internet tubes.
+        %p.animated.this
           =image_tag "images/commute-by.svg"
       %article
         .content
@@ -70,7 +71,7 @@
       %aside{style: "padding-top: 10%"}
         %h2 Office
         %p We don’t believe in set structures or fixed departments per se, not because  we don’t respect the “rules” of traditional business. We just have a different way of thinking, working and behaving.
-        %ul
+        %ul.animated.this
           %li
             =image_tag "images/build.png"
           %li
@@ -133,19 +134,19 @@
             = image_tag "images/shake-it-off.svg"
           %dl.count
             %dd
-              %span 01
+              %span#odometer.odometer 0
               Number of Sonos speakers in the office
             %dd
-              %span 31
+              %span#odometer2.odometer 0
               Times we danced to“Shake it Off” by Taylor Swift
             %dd
-              %span 50
+              %span#odometer3.odometer 0
               Number of days that song was available on Spotify
           %header.header-title
             Consumed Daily
             %span{style: "width: 330px"}
-          =image_tag "images/consumed-daily.svg", class: "consumed-daily"
-          =image_tag "images/consumed-dail-bars.svg", class: "consumed-daily"
+          =image_tag "images/consumed-daily.svg", class: "animated consumed-daily this"
+          =image_tag "images/consumed-dail-bars.svg", class: "animated consumed-daily next"
 
   %section.section.office
     .container
@@ -158,9 +159,13 @@
           %header.header-title{style: "padding-top: 10%"}
             Travel
             %span{style: "width: 100%"}
-          %h2.big-text 132,800 MILES
-          =image_tag "map.svg", class: "map"
-          =image_tag "map-dots.svg", class: "map"
+          %div
+            %span#odometer4.odometer.big-text
+              0
+            %span.big-text MILES
+          =image_tag "images/moon-bar.svg", class: "animated bar"
+          =image_tag "images/map.svg", class: "map"
+          =image_tag "images/map-dots.svg", class: "animated map dots"
           %ul.miles-stats
             %li
               .circle
@@ -192,7 +197,7 @@
             %span{style: "width: 488px"}
           %p
             =image_tag "gettin-down.svg", class: "elements"
-            =image_tag "hudileda.svg", class: "elements"
+            =image_tag "hudileda.svg", class: "animated elements"
 
   %section.section.process
     .container
@@ -203,9 +208,9 @@
       %article
         .content{style: "padding-top: 10%"}
           %figure
-            =image_tag "products-1.svg"
-            =image_tag "products-2.svg"
-            =image_tag "products-3.svg"
+            =image_tag "products-1.svg", class: "animated product-1"
+            =image_tag "products-2.svg", class: "animated product-2"
+            =image_tag "products-3.svg", class: "animated product-1"
 
   -# Products
   %section.section
@@ -218,11 +223,11 @@
             %li
               = link_to "Catalyst", "#", class: "active"
             %li
-              = link_to "Fetch"
+              = link_to "Fetch", "#10/1"
             %li
-              = link_to "Matchstiq"
+              = link_to "Matchstiq", "#10/2"
             %li
-              = link_to "WickedSmart"
+              = link_to "WickedSmart", "#10/3"
           %p
             We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
@@ -243,13 +248,13 @@
           %h5 Navigate Products
           %ul.slide-menu
             %li
-              = link_to "Catalyst"
+              = link_to "Catalyst", "#10/0"
             %li
-              = link_to "Fetch", "#", class: "active"
+              = link_to "Fetch", "#10/1", class: "active"
             %li
-              = link_to "Matchstiq"
+              = link_to "Matchstiq", "#10/2"
             %li
-              = link_to "WickedSmart"
+              = link_to "WickedSmart", "#10/3"
           %p
             We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
@@ -268,13 +273,13 @@
           %h5 Navigate Products
           %ul.slide-menu
             %li
-              = link_to "Catalyst"
+              = link_to "Catalyst", "#10/0"
             %li
-              = link_to "Fetch"
+              = link_to "Fetch", "#10/1"
             %li
-              = link_to "Matchstiq", "#", class: "active"
+              = link_to "Matchstiq", "#10/2", class: "active"
             %li
-              = link_to "WickedSmart"
+              = link_to "WickedSmart", "#10/3"
           %p
             We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
@@ -293,13 +298,13 @@
           %h5 Navigate Products
           %ul.slide-menu
             %li
-              = link_to "Catalyst"
+              = link_to "Catalyst", "#10/0"
             %li
-              = link_to "Fetch"
+              = link_to "Fetch", "#10/1"
             %li
-              = link_to "Matchstiq"
+              = link_to "Matchstiq", "#10/2"
             %li
-              = link_to "WickedSmart", "#", class: "active"
+              = link_to "WickedSmart", "#10/3", class: "active"
           %p
             We create products to solve problems around work. Most are apps; some are frameworks or services. Of the dozen or so in the hopper, here are the highlights for 2014.
         %article
@@ -324,7 +329,7 @@
         .content{style: "padding-top: 12%"}
           %p
             =image_tag "images/giving-back.svg", class: "giving-back"
-            =image_tag "images/we-heart.svg", class: "we-heart"
+            =image_tag "images/we-heart.svg", class: "animated we-heart"
 
   -# Thank You
   %section.section.thanks
@@ -340,5 +345,5 @@
 
 .wanker{"data-wanker" => "", style: "display: none"}
   .wanker-content
-    %h1 The web was meant to be read, not squished.
-    %p Prevent excessive browser resizing and get people back to reading.
+    %h1 Sorry, this website is not responsive.
+    %h3 Please use the latest Chrome, FireFox, or Safari for best results.
