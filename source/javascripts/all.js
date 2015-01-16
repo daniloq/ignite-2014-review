@@ -82,7 +82,7 @@ $(document).ready(function() {
         });
 
         setTimeout(function(){
-          odometer.innerHTML = 1;
+          odometer.innerHTML =1;
         }, 300);
 
         setTimeout(function(){
