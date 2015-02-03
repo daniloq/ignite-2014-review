@@ -136,15 +136,21 @@
             = image_tag "images/shake-it-off.svg"
           %dl.count
             %dd
-              %span#odometer.odometer 0
+              -# %span#odometer.odometer 0
+              = image_tag "01.svg", class: "number"
+              %br
               Number of Sonos speakers in the
               %br
               office
             %dd
-              %span#odometer2.odometer 0
+              -# %span#odometer2.odometer 0
+              = image_tag "31.svg", class: "number"
+              %br
               Times we danced to“Shake it Off” by Taylor Swift
             %dd
-              %span#odometer3.odometer 0
+              -# %span#odometer3.odometer 0
+              = image_tag "50.svg", class: "number"
+              %br
               Number of days that song was available on Spotify
           %header.header-title
             Consumed Daily
@@ -164,8 +170,9 @@
             Travel
             %span{style: "width: 100%"}
           %div
-            %span#odometer4.odometer.big-text
-            %span.big-text MILES
+            =image_tag "images/travelcount.svg", class: "travel-number"
+            -# %br
+            -# %span.big-text MILES
           =image_tag "images/map.svg", class: "map"
           =image_tag "images/map-dots.svg", class: "animated map dots"
           =image_tag "images/moon-bar.svg", class: "animated map bar"
