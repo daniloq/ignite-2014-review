@@ -1,3 +1,12 @@
+-# Mobile Message
+.no-mobile
+  Our report is best experience
+  %br
+  on your computer.
+.ie-sucks
+  .ie-content
+    Our report is best experienced on Google chrome.
+    = link_to "Copy URL.", "#"
 #fullpage
   -# Opening Hero
   %section.section.hero
@@ -54,7 +63,7 @@
           %header.header-title{style: "padding-top: 5%"}
             Disciplines
             %span{style: "width: 272px"}
-          %ul.discipline
+          %ul.discipline.clearfix
             %li
               = image_tag "images/disciplines-bars.svg", class: "animated disciplines"
               = image_tag "images/disciplines-numbers.svg", class: "animated discipline-numbers"
@@ -346,7 +355,7 @@
   -# Thank You
   %section.section.thanks
     .container
-      %article
+      %article{style: "max-width: 100%"}
         .content{style: "padding-top: 12%"}
         .end-point
         =image_tag "images/thank-you.svg", class: "thank-you"
@@ -354,11 +363,6 @@
           Thank you to our team, families, friends, partners, clients and everyone at Adecco Group.
           %br
           We wouldn't be where we are today without your support.
-
-.wanker{"data-wanker" => "", style: "display: none"}
-  .wanker-content
-    %h1 This site works best in Chrome on your computer.
-    %h3 Things may get messy elsewhere.
 
 :javascript
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

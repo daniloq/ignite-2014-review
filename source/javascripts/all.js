@@ -2,7 +2,6 @@
 //= jquery.scrollmagic.min
 //= wow
 //= odometer
-//= jquery.wanker
 //= require_tree .
 
 // WOW
@@ -10,6 +9,9 @@ new WOW().init();
 // Animations
 $(document).ready(function() {
   $('#fullpage').fullpage({
+    autoScrolling: true,
+    responsive: 1200,
+    scrollOverflow: true,
     onLeave: function(index, nextIndex, direction){
 
       if (nextIndex == 2) {
@@ -142,8 +144,4 @@ $(document).ready(function() {
 
     }
   });
-});
-// Wanker
-$(function() {
-  $('[data-wanker]').wanker();
 });

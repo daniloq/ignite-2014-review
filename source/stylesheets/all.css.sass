@@ -64,12 +64,34 @@ p
 
   // Layout
 .container
-  width: 1225px
+  // width: 1225px
+  width: 80vw
   margin: 0 auto
+
+.clearfix
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+  display: inline-block
+
+/* start commented backslash hack \
+
+* html .clearfix
+  height: 1%
+
+.clearfix
+  display: block
+
+/* close commented backslash hack
 
 
 aside
-  width: 372px
+  max-width: 372px
+  width: 30vw
   float: left
   p
     color: white
@@ -108,8 +130,10 @@ aside
     padding: 0
 
 article
-  width: 851px
+  width: 50vw
+  max-width: 851px
   float: left
+  position: relative
   .content
     height: 100%
     min-height: 100vh
@@ -159,6 +183,7 @@ article
   text-transform: uppercase
   padding-left: 60px
   box-sizing: border-box
+  letter-spacing: 2px
   span
     margin: 10px 0 0 -60px
     height: 4px
@@ -167,7 +192,7 @@ article
     border-radius: 1000px
 
 .lets-work
-  height: 290px
+  // height: 290px
   top: 34px
   left: 50px
   position: relative
@@ -204,11 +229,11 @@ article
 .humans
   position: absolute
   z-index: 1
-  height: 560px
+  // height: 560px
 
 .newbies
   position: relative
-  height: 560px
+  // height: 560px
 
 .horizontal-divider
   border-top: 2px dotted $slate
@@ -251,12 +276,12 @@ article
   margin: 20px 0
 
 .number
-  height: 130px
+  // height: 130px
   margin: 30px 0
 
 .travel-number
   margin: 30px 0 0 30px
-  height: 120px
+  // height: 120px
 
 dl.count
   margin: 0
@@ -285,12 +310,12 @@ dl.count
 
 .consumed-daily
   position: absolute
-  height: 403px
+  // height: 403px
   bottom: 0
 
 .map
   position: absolute
-  height: 302px
+  // height: 302px
   top: 250px
 
 .miles-stats
@@ -346,10 +371,10 @@ dl.count
   img
     &:nth-of-type(1)
       position: absolute
-      height: 186px
+      // height: 186px
     &:nth-of-type(2)
-      position: relative
-      height: 186px
+      position: absolute
+      // height: 186px
 
 
 .growth
@@ -360,15 +385,15 @@ dl.count
   img
     &:nth-of-type(1)
       position: absolute
-      height: 411px
+      // height: 411px
     &:nth-of-type(2)
       position: relative
-      height: 411px
+      // height: 411px
 
 
 .elements
   position: absolute
-  width: 809px
+  // width: 809px
   top: 30px
 
 .slide
@@ -379,6 +404,7 @@ dl.count
       weight: 700
     text-transform: uppercase
     color: white
+    letter-spacing: 2px
   aside > p
     font:
       size: 15px
@@ -411,6 +437,7 @@ dl.count
         family: 'Montserrat', sans-serif
         weight: 700
         size: 16px
+      letter-spacing: 2px
       &:hover, &:active, &.active
         background: white
 
@@ -513,7 +540,7 @@ dl.count
 
 .we-heart, .giving-back
   position: absolute
-  height: 467px
+  // height: 467px
   top: 30px
 
 dl.eats
@@ -588,8 +615,32 @@ dl.eats
   -webkit-animation-delay: 3s
   -moz-animation-iteration-count: 1
 
+.no-mobile, .ie-sucks
+  display: none
+
 @media (max-width: 1280px)
   .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next
     display: none
   .consumed-daily
     height: 348px
+
+@media (max-width: 976px)
+  .no-mobile
+    display: block
+    text-align: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background: $slate
+    color: white
+    padding: 120px 0
+    box-sizing: border-box
+    z-index: 2
+    font:
+      family: 'Montserrat', sans-serif
+      weight: 700
+      size: 20px
+    line-height: 35px
+    letter-spacing: 2px
+    text-transform: uppercase
