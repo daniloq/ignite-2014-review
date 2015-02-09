@@ -63,10 +63,9 @@
           %header.header-title{style: "padding-top: 5%"}
             Disciplines
             %span{style: "width: 272px"}
-          %ul.discipline.clearfix
-            %li
-              = image_tag "images/disciplines-bars.svg", class: "animated disciplines"
-              = image_tag "images/disciplines-numbers.svg", class: "animated discipline-numbers"
+          .disciplines
+            = image_tag "images/disciplines-bars.svg", class: "animated discipline"
+            = image_tag "images/disciplines-numbers.svg", class: "animated discipline-numbers"
           %p
             %span.horizontal-divider
             Renegades from the worlds of product development, web design, branding, staffing and beyond bring an original perspective to Ignite and the problems we face.
@@ -76,6 +75,7 @@
             * For nearly two months, we were officeless, waiting out our space renovation. Lucky for us, we had
             = link_to "CoWork Jax", "http://www.coworkjax.com/", target: "_blank"
             feeding us caffeine and connecting us with some of the city’s best.
+
   -# Office
   %section.section.office
     .container
@@ -94,8 +94,7 @@
           %header.header-title{style: "padding-top: 20%"}
             Growth By Year
             %span{style: "width: 100%"}
-          %ul.growth
-            %li
+          .growth-chart
             = image_tag "growth.svg"
             = image_tag "growth-dots.svg", class: "animated growth-dots"
           %p
@@ -182,9 +181,10 @@
             =image_tag "images/travelcount.svg", class: "travel-number"
             -# %br
             -# %span.big-text MILES
-          =image_tag "images/map.svg", class: "map"
-          =image_tag "images/map-dots.svg", class: "animated map dots"
-          =image_tag "images/moon-bar.svg", class: "animated map bar"
+          .maps
+            =image_tag "images/map.svg", class: "map"
+            =image_tag "images/map-dots.svg", class: "animated map dots"
+            =image_tag "images/moon-bar.svg", class: "animated map bar"
           %ul.miles-stats
             %li
               .circle
@@ -256,7 +256,7 @@
               Catalyst has grown to inspire intrapreneurs and organizations worldwide. Applying HuDiLeDa to business challenges within a workshop setting, Catalyst facilitates fresh thinking and sustainable innovation.
             %header.header-title{style: "padding-top: 5%"}
               2014 Workshops
-              %span{style: "width: 558px"}
+              %span{style: "width: 400px"}
             %p
               =image_tag "images/catalyst.svg"
 
@@ -282,7 +282,7 @@
             %p{style: "width: 560px"} Need to fill jobs fast? Fetch uses SMS technology to reach job-seekers on the go. Set up a campaign online and out go the details with prompts to respond. People can reply that they’re interested, opt out or, if you work at Ignite, try to break the app or mean tweet the Fetch dev team.
             %header.header-title{style: "padding-top: 5%"}
               National Rollout
-              %span{style: "width: 558px"}
+              %span{style: "width: 400px"}
             %p
               =image_tag "images/fetch.svg"
 
@@ -308,7 +308,7 @@
             %p{style: "width: 560px"} Matchstiq makes hiring a whole lot easier. With job orders, conversations and reports all in one place, hiring managers and recruiters always know where things stand. Tasks like résumé formatting and data crunching are automated, drawing the shortest line possible from “Hey, I need a person” to “You’re hired” and beyond.
             %header.header-title{style: "padding-top: 5%"}
               Team
-              %span{style: "width: 548px"}
+              %span{style: "width: 400px"}
             %p
               =image_tag "images/matchstiq.svg"
 
@@ -334,7 +334,7 @@
             %p{style: "width: 560px"} WickedSmart matches students and recent grads to opportunities that build careers, not just résumés.
             %header.header-title{style: "padding-top: 5%"}
               Signups: Students &amp; Alums
-              %span{style: "width: 738px"}
+              %span{style: "width: 400px"}
             %p
               =image_tag "images/wickedsmart.svg"
 
