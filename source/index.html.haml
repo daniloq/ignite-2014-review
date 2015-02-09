@@ -9,7 +9,7 @@
   .ie-content
     = image_tag "images/chrome.png"
     Our report is best experienced on Google chrome.
-    = link_to "Copy URL.", "#"
+    = link_to "Copy URL.", "#", id: "click"
 #fullpage
   -# Opening Hero
   %section.section.hero
@@ -368,11 +368,11 @@
           We wouldn't be where we are today without your support.
         %ul
           %li
-            = link_to "http://www.facebook.com/share.php?u=Rewind with @ignitewithus - 2014 annual report: http://www.ignitewithus.com/2014-annual-review #HuDiLeDa", class: "btn" do
+            = link_to "http://www.facebook.com/share.php?u=Rewind with @ignitewithus - 2014 annual report: http://www.ignitewithus.com/2014-annual-review #HuDiLeDa", target: "_blank", class: "btn" do
               %i.ion-social-facebook
               Share
           %li
-            = link_to "http://twitter.com/home?status=Rewind with @ignitewithus - 2014 annual report: http://www.ignitewithus.com/2014-annual-review #HuDiLeDa", class: "btn" do
+            = link_to "http://twitter.com/home?status=Rewind with @ignitewithus - 2014 annual report: http://www.ignitewithus.com/2014-annual-review #HuDiLeDa", target: "_blank", class: "btn" do
               %i.ion-social-twitter
               Tweet
 :javascript
@@ -383,3 +383,11 @@
 
   ga('create', 'UA-59290805-1', 'auto');
   ga('send', 'pageview');
+
+  function copyToClipboard(text) {
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+  }
+
+  $('#click').click(function() {
+      copyToClipboard('http://www.ignitewithus.com/2014-annual-review')
+  });
